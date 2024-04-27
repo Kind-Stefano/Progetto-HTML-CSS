@@ -1,0 +1,199 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+ 
+/* ::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5733; 
+} */
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #F8F9FA;
+  position: relative;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 10px;
+}
+
+/*inizio nav bar*/
+.topnav {
+  background-color: #5CABFF;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
+.topnav a:first-child {
+  float: left;
+}
+
+.topnav a:hover {
+  background-color: #5CABFF;
+  color: #FF5733;
+}
+
+.topnav a.active {
+  background-color: #5CABFF;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.home {
+  width: 24px;
+}
+/*fine nav bar*/
+
+.nome {
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 70px;
+  color: #FF5733;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.profilo {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+#carousel-words {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5CABFF;
+  margin-top: 141px;
+  padding: 10px 5px;
+}
+
+.icone-social {
+  margin: 0 10px 0 0;
+}
+
+.icona {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 10px;
+}
+
+.icona:hover {
+  background-color: #FF5733;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  * {
+    overflow-x: hidden;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a:not(:first-child, :last-child) {
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  main {
+    max-width: 400px;
+  }
+
+  .nome {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    position: relative;
+  }
+
+  .profilo {
+    margin-bottom: 200px; 
+  }
+
+  #carousel-words {
+    position: absolute;
+    margin-top: 200px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5CABFF;
+    margin-top: 100px;
+    padding: 10px 5px;
+  }
+
+  .icone-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icona {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    margin-left: 5px;
+  }
+  
+  .icona:hover {
+    background-color: #FF5733;
+  }
+  
+}

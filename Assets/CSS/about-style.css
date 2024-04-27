@@ -1,0 +1,305 @@
+::-webkit-scrollbar {
+  width: 0px;
+}
+ 
+/* ::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5733; 
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F9FA;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 10px;
+}
+
+/*inizio nav bar*/
+.topnav {
+  background-color: #5CABFF;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
+.topnav a:first-child {
+  float: left;
+}
+
+.topnav a:hover {
+  background-color: #5CABFF;
+  color: #FF5733;
+}
+
+.topnav a.active {
+  background-color: #5CABFF;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.home {
+  width: 24px;
+}
+/*fine nav bar*/
+
+.nome {
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 70px;
+  color: #FF5733;
+}
+
+.contenitore-descrizione {
+  margin-top: 80px;
+}
+
+hr {
+  border: 1px solid #FF5733;
+  opacity: 1;
+}
+
+.citazione {
+  display: flex;
+  flex-direction: column;
+  align-items: cente;
+  justify-content: center;
+  padding: 0 10px;
+  border-top: 1px dashed #FF5733;
+  border-bottom: 1px dashed #FF5733;
+  left: 0;
+  margin-top: 150px;
+  width: 300px;
+}
+
+.proverbio, .zen {
+  margin: 5px 0 5px 0;
+}
+
+.proverbio {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.zen {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 70px 0 0 115px;
+  padding: 20px 0;
+  background-color: #efefef;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.grazie {
+  text-align: left;
+  margin: 0 25px 15px 25px;
+}
+
+.contenitore-nome, 
+.contenitore-messaggio, 
+.contenitore-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-cta, 
+.messaggio-cta,
+.email-cta {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.input-nome, 
+.input-email {
+  margin-bottom: 20px;
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-messaggio {
+  width: 350px;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cercami {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #FF5733;
+  margin-top: 30px;
+}
+
+.cercami:hover {
+  background-color: #d74b2c;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5CABFF;
+  margin-top: 10px;
+  padding: 10px 5px;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.icone-social {
+  margin: 0 10px 0 0;
+}
+
+.icona {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 10px;
+}
+
+.icona:hover {
+  background-color: #FF5733;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  * {
+    overflow-x: hidden;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a:not(:first-child, :last-child) {
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  main {
+    max-width: 400px;
+  }
+
+  .nome {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .contenitore-descrizione {
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0 20px;
+    width: 300px;
+  }
+
+  .grazie {
+    display: none;
+  }
+
+  .contenitore-nome, 
+  .contenitore-messaggio,
+  .contenitore-email {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+  
+  .input-nome, 
+  .input-messaggio,
+  .input-email {
+    width: 250px;
+  }
+
+  .citazione {
+    width: 220px;
+  }
+
+  .proverbio {
+    font-size: 13px;
+    font-style: italic;
+  }
+  
+  .zen {
+    font-size: 10px;
+    font-style: italic;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5CABFF;
+    margin-top: 10px;
+    padding: 10px 5px;
+  }
+
+  .icone-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icona {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    margin-left: 5px;
+  }
+  
+  .icona:hover {
+    background-color: #FF5733;
+  }
+  
+}
