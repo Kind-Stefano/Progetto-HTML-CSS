@@ -111,6 +111,7 @@ h2 {
   background-color: white;
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .canva {
@@ -123,7 +124,7 @@ h2 {
   margin-top: 1.6em; 
   margin-bottom: 0.9em; 
   overflow: hidden;
-  border-radius: 8px; will-change: transform;
+  border-radius: 5px; will-change: transform;
 }
 
 .frame {
