@@ -73,11 +73,9 @@ main {
 
 .contenitore-descrizione {
   margin-top: 80px;
-}
-
-hr {
-  border: 1px solid #FF5733;
-  opacity: 1;
+  padding-top: 16px;
+  border-top: 1px solid #FF5733;
+  border-bottom: 1px solid #FF5733;
 }
 
 .citazione {
