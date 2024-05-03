@@ -101,6 +101,8 @@ footer {
   background-color: #5CABFF;
   margin-top: 141px;
   padding: 10px 5px;
+  bottom: 0;
+  position: sticky;
 }
 
 .icone-social {
